@@ -1,2 +1,2 @@
-# kipbok
-KIP Body of Knowledge
+# KIPBOK
+KiP Body of Knowledge
