@@ -6,3 +6,15 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page .page__inner-wrap .page__content, .page .page__inner-wrap .page__meta, .page .page__inner-wrap .comment__date, .page .page__inner-wrap .page__share {
+    text-align: justify;
+}
+
+.page__content .sidebar__right p, .page__content .sidebar__right li, .page__content .sidebar__right dl {
+    font-size: 1em;
+}
+
+.page__content p, .page__content li, .page__content dl {
+    font-size: 0.8em;
+}
