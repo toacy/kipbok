@@ -28,7 +28,7 @@ Knowledge Intensive Processes are everywhere but sometimes they are recognized a
 
 | Process                           | Description                                                               |
 | --------------------------------- | ------------------------------------------------------------------------- |
-| [Trip Planning](/example/trip/)   | The Trip Planning process attempts to support a traveler to plan a trip.  |
+| [Trip Planning](example/trip/)    | The Trip Planning process attempts to support a traveler to plan a trip.  |
 | Fracture Clinic                   | The Fracture Clinic process.                                              |
 | Agile Process                     | The Agile Software Process.                                               |
 
