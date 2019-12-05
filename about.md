@@ -12,5 +12,6 @@ TODO
 
 ### Contributors
 
+  * Toacy Cavalcante de Oliveira
   * Diogo Matheus Costa
   * Vladimir Marques Erthal
