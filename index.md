@@ -8,29 +8,27 @@ toc_label: "KIPBOK"
 
 # Introduction
 
-Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions processes use to determine stepwise recipes used by individuals and systems when navigating through a typical [procedure](), such as _Claiming Insurance_ or _Buying Airline Tickets_. Processes eventually are materialized, by some explicit process representation, to  organize activities, coordinate the enactment and analyse their results. Process Modeling Languages are the notations used to represent processes, whoses more popular examples are [BPMN]() (Business Process Management Notation), [CMMN]() (Case Management Modeling Notation), [PetriNets]() and [YAWL]() (Yet Another Workflow Language). This models can be fed to a workflow automation platform for (semi-)automatic [execution](), [analysis]() or [simulation](). 
+Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions processes use to determine stepwise recipes used by individuals and systems when navigating through a typical [procedure](), such as _Claiming Insurance_ or _Buying Airline Tickets_. Processes eventually are materialized, by some explicit process representation, to organize activities, coordinate the enactment and analyse their results. Process Modeling Languages are the notations used to represent processes, whoses more popular examples are [BPMN]() (Business Process Management Notation), [CMMN]() (Case Management Modeling Notation), [PetriNets]() and [YAWL]() (Yet Another Workflow Language). This models can be fed to a workflow automation platform for (semi-)automatic [execution](), [analysis]() or [simulation]().
 
 Processes can be found in "simple scenarios" such as in our daily visit to a coffee-shop, where baristas are prepping several different types of Lattes, Cappuccinos, Macchiatos, Iced Coffees, etc., each order following a combination of pre-defined recipes (kind of processes) and user defined customization (process tailoring) based on several types of coffee beans, different types of milk, special shots for flavoring, etc. Processes can also be present in complex scenarios such as being treated for a disease, where doctors, nurses, patient and hospitals collaborate to deal with a sophisticated web of information that relates symptoms, diseases, treatment procedures and resource allocation.
 
-Some processes are perceived as streamlined procedures (Fig. 1 - left) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers(KWs) that should be supported by a flexible computational infrastructure  that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions. 
+Some processes are perceived as streamlined procedures (Fig. 1 - left) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers(KWs) that should be supported by a flexible computational infrastructure that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions.
 
 {% include figure image_path="/assets/image/perceived.png" alt="Perceived vs Real Processes" caption="Fig. 1 - Perceived vs Real Processes" %}
 
 To capture the uncertainties found in collaborative, goal-oriented, knowledge dependent and non-repeatable processes, the literature from process management brings the concepts of a different kind of process, usually known as [Knowledge Intensive Processes]() (KIPs), but also known as [Knowledge Intensive Business Processes](), [Intentional Processes](), [Goal-Oriented Processes](), [Knowledge-Driven Processes](), [Decision Intensive Processes](), [Hybrid Processes]() or [Flexible Processes](). For example, KIPs can _"range from partially structured processes occurring when the overall workflow is not explicitly defined, but the existence of policies and regulations supports the identification of structured fragments; to unstructured processes appearing when the participants define the activities to be executed."_  Although we believe KIPs are a good fit to capture the complexity imposed by the knowledge-based industries, the unpredictability of modern individual-to-organization interactions aggregates extra complexity. In this scenario, achieving a goal may require KIPs to crosscut, be combined or be partially fulfilled, imposing process management techniques to extrapolate processes' start-event and end-event boundaries to help [process navigation]() and/or discover [process trends]() and [process anomalies]().
 
-This website is dedicated to explore the Knowledge Intensive Processes (KIPs) lifecycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs _"consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?)"_, providing a flexible conceptual framework to address modern individual-to-organization interactions.  
+This website is dedicated to explore the Knowledge Intensive Processes (KIPs) lifecycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs _"consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?)"_, providing a flexible conceptual framework to address modern individual-to-organization interactions. 
 
-This website is supported by several professors and grad students and it is a joint initiative involving the [Federal University of Rio de Janeiro-Brazil]() and the [University of Waterloo-Canada](). We also have sponsorship from COMAP?OWSE?.
+# Knowledge-intensive Process
 
-# Motivating Examples
+TODO: Definition;
 
-Knowledge Intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
+TODO: Synonyms;
 
-| Process                           | Description                                                               |
-| --------------------------------- | ------------------------------------------------------------------------- |
-| [Trip Planning](example/trip/)    | The Trip Planning process attempts to support a traveler to plan a trip.  |
-| Fracture Clinic                   | The Fracture Clinic process.                                              |
-| Agile Process                     | The Agile Software Process.                                               |
+TODO: KIP characteristics;
+
+TODO: KIP examples (overview);
 
 # KIP Representation
 
@@ -191,3 +189,25 @@ Instantiation occurs when processes become executable chunks of work and a worki
 ### Improvement
 
 After enactment, logs of each process and instance execution are recorded. Analyzing these logs, looking either for pattern repetition or activities not executed, can be used as input to process Improvement.
+
+# References
+
+TODO
+
+# Appendix A. KIP Examples
+
+Knowledge Intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
+
+| Process                           | Description                                                               |
+| --------------------------------- | ------------------------------------------------------------------------- |
+| [Trip Planning](example/trip/)    | The Trip Planning process attempts to support a traveler to plan a trip.  |
+| Fracture Clinic                   | The Fracture Clinic process.                                              |
+| Agile Process                     | The Agile Software Process.                                               |
+
+# Appendix B. Supporting Tools
+
+TODO
+
+# Appendix C. Training Material
+
+TODO
