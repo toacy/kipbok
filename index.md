@@ -8,11 +8,11 @@ toc_label: "KIPBOK"
 
 # Introduction
 
-Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions processes use to determine stepwise recipes used by individuals and systems when navigating through a typical [procedure](), such as _Claiming Insurance_ or _Buying Airline Tickets_. Processes eventually are materialized, by some explicit process representation, to organize activities, coordinate the enactment and analyse their results. Process Modeling Languages are the notations used to represent processes, whoses more popular examples are [BPMN]() (Business Process Management Notation), [CMMN]() (Case Management Modeling Notation), [PetriNets]() and [YAWL]() (Yet Another Workflow Language). This models can be fed to a workflow automation platform for (semi-)automatic [execution](), [analysis]() or [simulation]().
+Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a typical procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_. Processes eventually are materialized, by some explicit process representation, to organize activities, coordinate the enactment and analyse their results. Process Modeling Languages are the notations used to represent processes, whoses more popular examples are [BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN/) (Business Process Management Notation), [CMMN](https://www.omg.org/cmmn/) (Case Management Modeling Notation), PetriNets and YAWL. This models can be fed to a workflow automation platform for automatic or semi-automatic execution, analysis or simulation.
 
 Processes can be found in "simple scenarios" such as in our daily visit to a coffee-shop, where baristas are prepping several different types of Lattes, Cappuccinos, Macchiatos, Iced Coffees, etc., each order following a combination of pre-defined recipes (kind of processes) and user defined customization (process tailoring) based on several types of coffee beans, different types of milk, special shots for flavoring, etc. Processes can also be present in complex scenarios such as being treated for a disease, where doctors, nurses, patient and hospitals collaborate to deal with a sophisticated web of information that relates symptoms, diseases, treatment procedures and resource allocation.
 
-Some processes are perceived as streamlined procedures (Fig. 1 - left) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers(KWs) that should be supported by a flexible computational infrastructure that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions.
+Some processes are perceived as streamlined procedures (Fig. 1 - left) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers (KWs) that should be supported by a flexible computational infrastructure that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions.
 
 {% include figure image_path="/assets/image/perceived.png" alt="Perceived vs Real Processes" caption="Fig. 1 - Perceived vs Real Processes" %}
 
@@ -44,7 +44,7 @@ The approach of BPMN is to represent the workﬂow directly in the model. It ind
 
 Fig. 2 shows the elements used in BPMN models, while Fig. 3 represents a example of a simple _Addition Process_ starting with an activity (_Get Numbers_) to obtain the input numbers. Then the process validates those numbers (_Validate Numbers_) and moves on to calculate the sum (_Calculate Sum_) if the numbers are valid; if not valid, the process flow goes back to get new input numbers.
 
-{% include figure image_path="/assets/image/bpmn-elements.png" alt="BPMN elements" caption="Fig. 2 - BPMN elements (found in [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
+{% include figure image_path="/assets/image/bpmn-elements.png" alt="BPMN elements" caption="Fig. 2 - BPMN elements ([Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
 
 {% include figure image_path="/assets/image/sum.png" alt="Simple Addition Process" caption="Fig. 3 - Example of Simple Addition Process" %}
 
@@ -66,7 +66,7 @@ The main objective of CMMN is to deﬁne a common meta-model and notation for mo
 
 Fig. 4 shows the elements used in CMMN models, while Fig. 5 illustrates the same _Addition Process_ using CMMN, where the _Get Numbers_ and _Calculate Sum_ activities are connected using a dashed-dot line and a sentry (shallow diamond). The dashed-dot line is decorated with the term _complete_ and is combined with the sentry to indicate the _Calculate Sum_ activity can only start when the _Get Numbers_ activity is completed, thus representing a sequence. It also represents the activity _Validate Numbers_ decorated with a dashed line to indicate such activity is discretionary. Different from the BPMN version of the _Addition Process_ that uses a gateway to represent an optional flow, the CMMN model leaves the decision to apply or not apply validation to the case worker. As a result, when the CMMN version of the _Addition Process_ process starts the _Get Numbers_  activity will be available to execute but _Validate Numbers_ and _Calculate Sum_ will become available only when _Get Numbers_ is completed. Given _Validate Numbers_ is discretionary, the process may execute _Calculate Sum_ without waiting for the validation action.
 
-{% include figure image_path="/assets/image/cmmn-elements.png" alt="CMMN elements" caption="Fig. 4 - CMMN elements (found in [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
+{% include figure image_path="/assets/image/cmmn-elements.png" alt="CMMN elements" caption="Fig. 4 - CMMN elements ([Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
 
 {% include figure image_path="/assets/image/sum_flex.png" alt="Simple Addition Process in CMMN" caption="Fig. 5 - Simple Addition Process in CMMN" %}
 
@@ -96,7 +96,7 @@ More details on each of the stages and transitions are below.
 
 ## KIP Stages
 
-{% include figure image_path="/assets/image/kip-lifecycle.png" alt="KIP Lifecycle" caption="Fig. 4 - KIP Lifecycle" %}
+{% include figure image_path="/assets/image/kip-lifecycle.png" alt="KIP Lifecycle" caption="Fig. 6 - KIP Lifecycle" %}
 
 ### Conceptual
 
@@ -148,11 +148,11 @@ Each of these adaptations can result in one or multiple process transformations.
 
 This transformation represents when the concepts from the Conceptual View are transformed in processes. This means this process will now have a starting point, a flow, indications of responsibilities for groups of process activities, i.e., will have incorporated the structured elements that belong to the Conceptual View. The figure below illustrate the Conceptual view as a blue cloud with some concepts. All 4 processes (P1, P2, P3 and P4) are reified from the concepts in the cloud. These are definitions coming from and based on extensive research and best-practices on software development. The concepts in the cloud are typically represented in natural language or non-formal representations, which demands an expert to transform these concepts in processes (reification). 
 
-{% include figure image_path="/assets/image/ReificationExample11.png" alt="1st Reification Example" caption="Fig. 5 - 1st Reification Example" %}
+{% include figure image_path="/assets/image/ReificationExample11.png" alt="1st Reification Example" caption="Fig. 7 - 1st Reification Example" %}
 
 Let's try to make things clear with an example, represented in BPMN. Let's suppose a project manager is defining tasks for a project, and she/he gathered some concepts with the company's VP after a long meeting. The new reified process can be something like: 
 
-{% include figure image_path="/assets/image/ReificationExample2.png" alt="Illustration of reified process" caption="Fig. 6 - Illustration of reified process" %}
+{% include figure image_path="/assets/image/ReificationExample2.png" alt="Illustration of reified process" caption="Fig. 8 - Illustration of reified process" %}
 
 If at this point you're thinking "this is really hard to predict and it's a very creative procedure", guess what? You're so right!! And I don't mean to be mean, but there's some other aspects to consider such as time, team expertise, budget, technologies... None of these were in the conceptual view, right? That is why there are other transformations that are very likely to happen. Next topic will demonstrate the next one :) 
 
@@ -167,11 +167,11 @@ A simple example using a common notation (BPMN) is shown below.
 
 After posting all parcels in the post office service, some prices may vary. The original process does not consider that measures and prices might have to be updated. A tailored process to include this unforeseen activity is illustrated below. One process activity was added to the original process.
 
-{% include figure image_path="/assets/image/TailoringExample.png" alt="1st Tailoring Example using BPMN" caption="Fig. 7 - 1st Tailoring Example using BPMN" %}
+{% include figure image_path="/assets/image/TailoringExample.png" alt="1st Tailoring Example using BPMN" caption="Fig. 9 - 1st Tailoring Example using BPMN" %}
 
 Another (simpler) example is when an online store starts accepting debit as payment method for centain cases (for example, if a client purchase is over $100). Then, the debit card option has to be added to the process. This can be done using Tailoring. The blue elements below are the elements that were added during this process tailoring. 
 
-{% include figure image_path="/assets/image/TailoringExample2.png" alt="2nd Tailoring Example using BPMN" caption="Fig. 8 - 2nd Tailoring Example using BPMN" %}
+{% include figure image_path="/assets/image/TailoringExample2.png" alt="2nd Tailoring Example using BPMN" caption="Fig. 10 - 2nd Tailoring Example using BPMN" %}
 
 Source: PILLAT, R. (2018). BPMNt: A proposal for flexible process tailoring representation in BPMN. Tese de Doutorado. Universidade Federal do Rio de Janeiro, Brasil. 
 https://www.cos.ufrj.br/uploadfile/publicacao/2825.pdf
@@ -180,11 +180,11 @@ https://www.cos.ufrj.br/uploadfile/publicacao/2825.pdf
 
 Instantiation occurs when processes become executable chunks of work and a working plan is materialized. It is the transformation between process and actual work plans. The process is defined and every time the process is executed, entirely or partially, it generates a new instance.
 
-{% include figure image_path="/assets/image/InstantiationExample.png" alt="Instantiation Example using BPMN" caption="Fig. 9 - Instantiation Example using BPMN" %}
+{% include figure image_path="/assets/image/InstantiationExample.png" alt="Instantiation Example using BPMN" caption="Fig. 11 - Instantiation Example using BPMN" %}
 
 ### Execution/Enactment
 
-{% include figure image_path="/assets/image/EnactmentExample.png" alt="Enactment Example using BPMN" caption="Fig. 10 - Enactment Example using BPMN" %}
+{% include figure image_path="/assets/image/EnactmentExample.png" alt="Enactment Example using BPMN" caption="Fig. 12 - Enactment Example using BPMN" %}
 
 ### Improvement
 
@@ -192,7 +192,7 @@ After enactment, logs of each process and instance execution are recorded. Analy
 
 # References
 
-TODO
+N/A
 
 # Appendix A. KIP Examples
 
@@ -206,8 +206,20 @@ Knowledge Intensive Processes are everywhere but sometimes they are recognized a
 
 # Appendix B. Supporting Tools
 
-TODO
+## Modeling
+
+  * [Camunda Modeler](https://camunda.com/products/modeler/)
+
+## Process Mining
+ 
+  * [Celonis](https://www.celonis.com/)
+  * [ProM](http://www.promtools.org)
+  * [Apromore](https://apromore.org/)
 
 # Appendix C. Training Material
 
-TODO
+## Process Mining
+
+  * [TU/e - Process Mining (coursera)](https://www.coursera.org/learn/process-mining)
+  * [TU/e - Introduction to Process Mining with ProM (futurelearn)](https://www.futurelearn.com/courses/process-mining)
+  * [TU/e - Process Mining in Healthcare (futurelearn)](https://www.futurelearn.com/courses/process-mining-healthcare)
