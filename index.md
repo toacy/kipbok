@@ -8,7 +8,7 @@ toc_label: "KIPBOK"
 
 # I. Introduction
 
-Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a typical procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_.
+Processes are important pieces in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a typical procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_.
 
 Processes eventually are materialized, by some explicit representation, to organize activities, coordinate the enactment and analyze its results. Process modeling languages are the notations used to represent processes, whoses more popular examples are [BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN/) (Business Process Management Notation) and [CMMN](https://www.omg.org/cmmn/) (Case Management Modeling Notation). The materialized processes is known as process model and it can be fed to a workflow automation plataform for automatic or semi-automatic execution, analysis or simulation.
 
@@ -22,19 +22,21 @@ To capture the uncertainties found in collaborative, goal-oriented, knowledge de
 
 KIPs represents an alternative to capture the complexity imposed by the knowledge-based industries, the unpredictability of modern individual-to-organization interactions aggregates extra complexity. In this scenario, achieving a goal may require KIPs to crosscut, be combined or be partially fulfilled, imposing process management techniques to extrapolate processes' start-event and end-event boundaries to help process navigation and/or discover process trends and process anomalies.
 
-This website is a living body of knowledge focused on Knowledge-intensive Processes (KIPs), its life cycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?), providing a flexible conceptual framework to address modern individual-to-organization interactions.
+This document is a living body of knowledge focused on Knowledge-intensive Processes (KIPs), its life cycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?), providing a flexible conceptual framework to address modern individual-to-organization interactions.
 
-The remainder of this document is structured as follows: Section II presents the concepts of KIPs; Section III briefly discusses KIPs representation; and Section IV describes the KIP life cycle and its transitions.
+The remainder of this document is structured as follows: Section II presents the concepts of KIP; Section III briefly discusses KIPs representation; and Section IV describes the KIP life cycle and its transitions.
 
 # II. Knowledge-intensive Process
 
+Knowledge-intensive Processes (KIPs) are everywhere but sometimes they are recognized as simple prescriptive processes (i.e., structured). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs.
+
 TODO: Definition;
 
-TODO: Synonyms (Knowledge-intensive Business Processes (KIBP), Intentional Processes, Goal-Oriented Processes, Knowledge-Driven Processes, Decision Intensive Processes, Hybrid Processes and Flexible Processes).
+Although this document adopts the term Knowledge-intensive Process (KIP), this kind of process is discussed in the literature through different synonyms, among which are: _Knowledge-intensive Business Processes (KIBP)_; _Intentional Processes_; _Goal-Oriented Processes_; _Knowledge-Driven Processes_; _Decision-intensive Processes_; _Hybrid Processes_; and _Flexible Processes_.
 
 TODO: KIP characteristics;
 
-TODO: KIP examples (overview);
+Examples of KIP listed in the literature include: _Trip Planning_; _Incident Troubleshooting_; and _Fracture Treatment_. In Appendix B of this document, some modeled KIP examples are provided.
 
 # III. KIP Representation
 
@@ -56,7 +58,7 @@ Fig. 2 shows the elements used in BPMN models, while Fig. 3 represents a example
 
 More information on BPMN models can be found in a [quick guide here](http://www.bpmnquickguide.com/quickguide/index.html?bpmn_examples.htm) and in the [official documentation here](https://www.omg.org/spec/BPMN/2.0/).
 
-(References: [Adensamer and Rueckel, 2018](https://www.researchgate.net/publication/326061168_Differences_Between_BPM_and_ACM_Models_for_Process_Execution); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
+([Adensamer and Rueckel, 2018](https://www.researchgate.net/publication/326061168_Differences_Between_BPM_and_ACM_Models_for_Process_Execution); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
 
 ## CMMN
 
@@ -78,7 +80,7 @@ Fig. 4 shows the elements used in CMMN models, while Fig. 5 illustrates the same
 
 A nice explanation about the CMMN elements [can be seen here](http://knut.hinkelmann.ch/lectures/bpm2015-16/04_CMMN.pdf) and in the [official documentation here](https://www.omg.org/spec/CMMN/About-CMMN/).
 
-(References: [Pillaerds and Eshuis, 2017](https://www.semanticscholar.org/paper/ASSESSING-SUITABILITY-OF-ADAPTIVE-CASE-MANAGEMENT-Pillaerds/d4c6f7cc4ab9f24fac3b84052f8b7f5d01b468ee); [Routis et al., 2018](https://ieeexplore.ieee.org/document/8536102); [Lantow, 2018](https://www.researchgate.net/publication/328216689_Adaptive_Case_Management_-_A_Review_of_Method_Support_11th_IFIP_WG_81_Working_Conference_PoEM_2018_Vienna_Austria_October_31_-_November_2_2018_Proceedings); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
+([Pillaerds and Eshuis, 2017](https://www.semanticscholar.org/paper/ASSESSING-SUITABILITY-OF-ADAPTIVE-CASE-MANAGEMENT-Pillaerds/d4c6f7cc4ab9f24fac3b84052f8b7f5d01b468ee); [Routis et al., 2018](https://ieeexplore.ieee.org/document/8536102); [Lantow, 2018](https://www.researchgate.net/publication/328216689_Adaptive_Case_Management_-_A_Review_of_Method_Support_11th_IFIP_WG_81_Working_Conference_PoEM_2018_Vienna_Austria_October_31_-_November_2_2018_Proceedings); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
 
 # IV. KIP life cycle
 
@@ -206,13 +208,30 @@ TODO
 
 # Appendix B. KIP Examples
 
-Knowledge-intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
+In order to better expose the KIP phenomenon this section brings examples to expose how process are in fact complex and non-deterministic.
 
-| Process                           | Description                                                               |
-| --------------------------------- | ------------------------------------------------------------------------- |
-| [Trip Planning](example/trip/)    | The Trip Planning process attempts to support a traveler to plan a trip.  |
-| Fracture Clinic                   | The Fracture Clinic process.                                              |
-| Agile Process                     | The Agile Software Process.                                               |
+<table>
+    <thead>
+        <tr>
+            <th>Process</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="example/trip/">Trip Planning</a></td>
+            <td>The Trip Planning process attempts to support a traveler to plan a trip.</td>
+        </tr>
+        <tr>
+            <td>Fracture Clinic</td>
+            <td>The Fracture Clinic process.</td>
+        </tr>
+        <tr>
+            <td>Agile Process</td>
+            <td>The Agile Software Process.</td>
+        </tr>
+    </tbody>
+</table>
 
 # Appendix C. Supporting Tools
 
