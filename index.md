@@ -30,6 +30,8 @@ The remainder of this document is structured as follows: Section II presents the
 
 TODO: Definition;
 
+Knowledge-intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
+
 TODO: Synonyms (Knowledge-intensive Business Processes (KIBP), Intentional Processes, Goal-Oriented Processes, Knowledge-Driven Processes, Decision Intensive Processes, Hybrid Processes and Flexible Processes).
 
 TODO: KIP characteristics;
@@ -206,13 +208,28 @@ TODO
 
 # Appendix B. KIP Examples
 
-Knowledge-intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
-
-| Process                           | Description                                                               |
-| --------------------------------- | ------------------------------------------------------------------------- |
-| [Trip Planning](example/trip/)    | The Trip Planning process attempts to support a traveler to plan a trip.  |
-| Fracture Clinic                   | The Fracture Clinic process.                                              |
-| Agile Process                     | The Agile Software Process.                                               |
+<table>
+    <thead>
+        <tr>
+            <th>Process</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="example/trip/">Trip Planning</a></td>
+            <td>The Trip Planning process attempts to support a traveler to plan a trip.</td>
+        </tr>
+        <tr>
+            <td>Fracture Clinic</td>
+            <td>The Fracture Clinic process.</td>
+        </tr>
+        <tr>
+            <td>Agile Process</td>
+            <td>The Agile Software Process.</td>
+        </tr>
+    </tbody>
+</table>
 
 # Appendix C. Supporting Tools
 
