@@ -6,35 +6,41 @@ toc: true
 toc_label: "KIPBOK"
 ---
 
-# Introduction
+# I. Introduction
 
-Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a typical procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_. Processes eventually are materialized, by some explicit process representation, to organize activities, coordinate the enactment and analyse their results. Process Modeling Languages are the notations used to represent processes, whoses more popular examples are [BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN/) (Business Process Management Notation), [CMMN](https://www.omg.org/cmmn/) (Case Management Modeling Notation), PetriNets and YAWL. This models can be fed to a workflow automation platform for automatic or semi-automatic execution, analysis or simulation.
+Processes are important concepts in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a typical procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_.
 
-Processes can be found in "simple scenarios" such as in our daily visit to a coffee-shop, where baristas are prepping several different types of Lattes, Cappuccinos, Macchiatos, Iced Coffees, etc., each order following a combination of pre-defined recipes (kind of processes) and user defined customization (process tailoring) based on several types of coffee beans, different types of milk, special shots for flavoring, etc. Processes can also be present in complex scenarios such as being treated for a disease, where doctors, nurses, patient and hospitals collaborate to deal with a sophisticated web of information that relates symptoms, diseases, treatment procedures and resource allocation.
+Processes eventually are materialized, by some explicit representation, to organize activities, coordinate the enactment and analyze its results. Process modeling languages are the notations used to represent processes, whoses more popular examples are [BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN/) (Business Process Management Notation) and [CMMN](https://www.omg.org/cmmn/) (Case Management Modeling Notation). The materialized processes is known as process model and it can be fed to a workflow automation plataform for automatic or semi-automatic execution, analysis or simulation.
 
-Some processes are perceived as streamlined procedures (Fig. 1 - left) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers (KWs) that should be supported by a flexible computational infrastructure that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions.
+Processes can be found in "simple scenarios" such as in our daily visit to a coffee-shop, where baristas are prepping several different types of Lattes, Cappuccinos, Macchiatos, Iced Coffees, etc. Each order follows a combination of pre-defined recipes (i.e., kind of process) and user defined customization (i.e., process tailoring) based on several types of coffee beans, different types of milk, special shots for flavoring, etc. In addition, processes can also be present in complex scenarios such as disease treatment, where doctors, nurses, patient and hospitals collaborate to deal with a sophisticated web of information that relates symptoms, diseases, treatment procedures and resource allocation.
+
+Some processes are perceived as streamlined procedures (Fig. 1 - left example) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers (KWs) that should be supported by a flexible computational infrastructure that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right example), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions.
 
 {% include figure image_path="/assets/image/perceived.png" alt="Perceived vs Real Processes" caption="Fig. 1 - Perceived vs Real Processes" %}
 
-To capture the uncertainties found in collaborative, goal-oriented, knowledge dependent and non-repeatable processes, the literature from process management brings the concepts of a different kind of process, usually known as [Knowledge Intensive Processes]() (KIPs), but also known as [Knowledge Intensive Business Processes](), [Intentional Processes](), [Goal-Oriented Processes](), [Knowledge-Driven Processes](), [Decision Intensive Processes](), [Hybrid Processes]() or [Flexible Processes](). For example, KIPs can _"range from partially structured processes occurring when the overall workflow is not explicitly defined, but the existence of policies and regulations supports the identification of structured fragments; to unstructured processes appearing when the participants define the activities to be executed."_  Although we believe KIPs are a good fit to capture the complexity imposed by the knowledge-based industries, the unpredictability of modern individual-to-organization interactions aggregates extra complexity. In this scenario, achieving a goal may require KIPs to crosscut, be combined or be partially fulfilled, imposing process management techniques to extrapolate processes' start-event and end-event boundaries to help [process navigation]() and/or discover [process trends]() and [process anomalies]().
+To capture the uncertainties found in collaborative, goal-oriented, knowledge dependent and non-repeatable processes, the process management literature brings the concepts of a different kind of process, usually known as Knowledge-intensive Processes (KIPs). In contrast with the traditional processes, perceived as streamlined procedures (i.e., structured), KIPs can range from partially structured processes occurring when the overall workflow is not explicitly defined, but the existence of policies and regulations supports the identification of structured fragments; to unstructured processes appearing when the participants define the activities to be executed.
 
-This website is dedicated to explore the Knowledge Intensive Processes (KIPs) lifecycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs _"consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?)"_, providing a flexible conceptual framework to address modern individual-to-organization interactions. 
+KIPs represents an alternative to capture the complexity imposed by the knowledge-based industries, the unpredictability of modern individual-to-organization interactions aggregates extra complexity. In this scenario, achieving a goal may require KIPs to crosscut, be combined or be partially fulfilled, imposing process management techniques to extrapolate processes' start-event and end-event boundaries to help process navigation and/or discover process trends and process anomalies.
 
-# Knowledge-intensive Process
+This website is a living body of knowledge focused on Knowledge-intensive Processes (KIPs), its life cycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?), providing a flexible conceptual framework to address modern individual-to-organization interactions.
+
+The remainder of this document is structured as follows: Section II presents the concepts of KIPs; Section III briefly discusses KIPs representation; and Section IV describes the KIP life cycle and its transitions.
+
+# II. Knowledge-intensive Process
 
 TODO: Definition;
 
-TODO: Synonyms;
+TODO: Synonyms (Knowledge-intensive Business Processes (KIBP), Intentional Processes, Goal-Oriented Processes, Knowledge-Driven Processes, Decision Intensive Processes, Hybrid Processes and Flexible Processes).
 
 TODO: KIP characteristics;
 
 TODO: KIP examples (overview);
 
-# KIP Representation
+# III. KIP Representation
 
 To represent real world scenarios, we can use process models. A process model is a way of structuring a Business Process Management (BPM), and indicates the elements that can be used as abstractions for organizing the process's activities and to facilitate the understanding of their interrelationships. Process Models can be formal or informal. A _formal process model_ precisely describes a flow of work and is typically executed using a Workflow Management System (WMS) or a Process Aware Information System (PAIS). On the other hand an _informal process model_ is usually interpreted by humans and used as a discussion or documentation tool.
 
-A process model can be represented with several languages or notations. Although most notations share some similarities and are capable of representing process abstractions such as activities, sequencing and decisions, there are conceptual differences between them. Some notations are activity-centric, where a process is composed of activities representing units of work, and control ﬂow elements determine the order of activity execution. Others are data-centric, where  a process progresses based on the availability of data and their values at a given point in time. Some examples of activity-centric notations are [BPMN](), [YAWL](), [UML Activity Diagrams](), [Event-driven Process Chains (EPC)]() and [Petri Nets](), while the big exponent of the data-centric notation is [CMMN](). Both BPMN and CMMN are notations maintained by The Object Management Group (OMG) for modeling processes. (Reference: [Merrella et al., 2016](https://ieeexplore.ieee.org/document/7399100))
+A process model can be represented with several languages or notations. Although most notations share some similarities and are capable of representing process abstractions such as activities, sequencing and decisions, there are conceptual differences between them. Some notations are activity-centric, where a process is composed of activities representing units of work, and control ﬂow elements determine the order of activity execution. Others are data-centric, where  a process progresses based on the availability of data and their values at a given point in time. Some examples of activity-centric notations are [BPMN](), [YAWL](), [UML Activity Diagrams](), [Event-driven Process Chains (EPC)]() and [Petri Nets](), while the big exponent of the data-centric notation is [CMMN](). Both BPMN and CMMN are notations maintained by The Object Management Group (OMG) for modeling processes. ([Merrella et al., 2016](https://ieeexplore.ieee.org/document/7399100))
 
 ## BPMN
 
@@ -74,13 +80,13 @@ A nice explanation about the CMMN elements [can be seen here](http://knut.hinkel
 
 (References: [Pillaerds and Eshuis, 2017](https://www.semanticscholar.org/paper/ASSESSING-SUITABILITY-OF-ADAPTIVE-CASE-MANAGEMENT-Pillaerds/d4c6f7cc4ab9f24fac3b84052f8b7f5d01b468ee); [Routis et al., 2018](https://ieeexplore.ieee.org/document/8536102); [Lantow, 2018](https://www.researchgate.net/publication/328216689_Adaptive_Case_Management_-_A_Review_of_Method_Support_11th_IFIP_WG_81_Working_Conference_PoEM_2018_Vienna_Austria_October_31_-_November_2_2018_Proceedings); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
 
-# KIP Life cycle
+# IV. KIP life cycle
 
 A process life cycle can be seen as a collection of _stages_ and associated _operations_ that allow intra or inter stages transitions. A _Process Stage_ can be defined as a place sharing common definitions such as a common metamodel or the same representation language. For example a Java program may seen as having two stages, one as the Java source-code and another as the Java byte-code. The Java source-code is defined by the [Java grammar](https://docs.oracle.com/javase/specs/jls/se7/html/jls-18.html) while the Java byte-code has it's own [file format](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html).
 
 _Transitions_ can be defined as operations allowing concepts (files) moving from one stage to another (inter stage transition) or staying in the same stage with a different configuration (intra stage transition). Going back to the Java program example we can see the Java compiler as an inter stage transition as it compiles Java source-code into Java byte-code. On the other hand, a Java refactoring tool can be seen as an intra stage transition as the input and output files are both Java source-code.  
 
-Using stages and transitions abstractions to understand the life cycle for knowledge intensive processes allows us to isolate and dissect concepts according to an specific rationale, and provide a didactic and systematic way to explore the phenomena. Moreover, stages and transitions abstractions are commonly used in Model Driven Engineering so we can leverage on some of its frameworks and tools.
+Using stages and transitions abstractions to understand the life cycle for Knowledge-intensive Processes allows us to isolate and dissect concepts according to an specific rationale, and provide a didactic and systematic way to explore the phenomena. Moreover, stages and transitions abstractions are commonly used in Model Driven Engineering so we can leverage on some of its frameworks and tools.
 
 We will illustrate most of the process models used in this text with BPMN (Business Process Modeling Notation) as BPMN is recognized as the de facto process modeling language. We will also use CMMN (Case Management Modeling Notation), as CMMN allows representing flexible workflows that can be called from BPMN process or executed standalone. Both notations, BPMN and CMMN, are supported by several tool vendors (SAP, IBM, BizAgi, Signavio, Camunda, etc.) and can describe formal or informal processes. It is important to mention KIPs may require other abstractions than those found in BPMN and CMMN as exposed in [KIPO](https://link.springer.com/article/10.1007/s10270-014-0397-1), but we will annotate the model when required.  
 
@@ -192,11 +198,15 @@ After enactment, logs of each process and instance execution are recorded. Analy
 
 # References
 
-N/A
+TODO
 
-# Appendix A. KIP Examples
+# Appendix A. KIP Notations
 
-Knowledge Intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
+  * TODO
+
+# Appendix B. KIP Examples
+
+Knowledge-intensive Processes are everywhere but sometimes they are recognized as simple prescriptive processes. By prescriptive processes we mean processes that can be executed as is, such as in a car assembly line where parts are fed in one end of the line and cars are deterministically assembled (sometimes with the help of individuals). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs. In order to better expose the KIP phenomenon this section brings several motivating examples to expose how process are in fact complex and non-deterministic.
 
 | Process                           | Description                                                               |
 | --------------------------------- | ------------------------------------------------------------------------- |
@@ -204,7 +214,7 @@ Knowledge Intensive Processes are everywhere but sometimes they are recognized a
 | Fracture Clinic                   | The Fracture Clinic process.                                              |
 | Agile Process                     | The Agile Software Process.                                               |
 
-# Appendix B. Supporting Tools
+# Appendix C. Supporting Tools
 
 ## Modeling
 
@@ -216,7 +226,7 @@ Knowledge Intensive Processes are everywhere but sometimes they are recognized a
   * [ProM](http://www.promtools.org)
   * [Apromore](https://apromore.org/)
 
-# Appendix C. Training Material
+# Appendix D. Training Material
 
 ## Process Mining
 
