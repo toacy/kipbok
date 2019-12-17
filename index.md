@@ -24,19 +24,19 @@ KIPs represents an alternative to capture the complexity imposed by the knowledg
 
 This document is a living body of knowledge focused on Knowledge-intensive Processes (KIPs), its life cycle and how it can be combined with [Workgraphs](https://www.wired.com/2013/10/its-time-to-focus-on-the-work-graph-not-social-networks-at-work/) to improve process management. Workgraphs consists of the units of work (tasks, ideas, clients, goals, agenda items); information about that work (relevant conversations, files, status, metadata); how it all fits together; and then the people involved with the work (who’s responsible for what? which people need to be kept in the loop?), providing a flexible conceptual framework to address modern individual-to-organization interactions.
 
-The remainder of this document is structured as follows: Section II presents the concepts of KIP; Section III briefly discusses KIPs representation; and Section IV describes the KIP life cycle and its transitions.
+The remainder of this document is structured as follows: [Section II](#ii-knowledge-intensive-process) presents the concepts of KIP; [Section III](#iii-kip-representation) briefly discusses KIPs representation; and [Section IV](#iv-kip-life-cycle) describes the KIP life cycle and its transitions.
 
 # II. Knowledge-intensive Process
 
-Knowledge-intensive Processes (KIPs) are everywhere but sometimes they are recognized as simple prescriptive processes (i.e., structured). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs.
+Knowledge-intensive Processes (KIPs) are everywhere but sometimes they are recognized as simple prescriptive processes (i.e., structured). However modern processes typically support individuals in achieving their goals and typically deviate from the original model to accommodate specific and unplanned needs (i.e., partially structured or unstructured).
 
-TODO: Definition;
+Although this document adopts the term Knowledge-intensive Process (KIP), this kind of process is discussed in the literature through different synonyms, such as: _Knowledge-intensive Business Processes (KIBP)_; _Intentional Processes_; _Goal-Oriented Processes_; _Knowledge-Driven Processes_; _Decision-intensive Processes_; _Hybrid Processes_; and _Flexible Processes_.
 
-Although this document adopts the term Knowledge-intensive Process (KIP), this kind of process is discussed in the literature through different synonyms, among which are: _Knowledge-intensive Business Processes (KIBP)_; _Intentional Processes_; _Goal-Oriented Processes_; _Knowledge-Driven Processes_; _Decision-intensive Processes_; _Hybrid Processes_; and _Flexible Processes_.
+In this scenario, KIPs are processes whose conduct and execution are heavily dependent on knowledge workers performing various interconnected knowledge intensive decision making tasks. KiPs are genuinely knowledge, information and data centric and require substantial flexibility at design- and run-time (Vaculin et al., 2011).
 
-TODO: KIP characteristics;
+According to Di Ciccio et al. (2014), the main characteristics of KIPs are: _Knowledge-driven_; _Collaboration-oriented_; _Unpredictable_; _Emergent_; _Goal-oriented_; _Event-driven_; _Constraint- and rule-driven_; and _Non-repeatable_.
 
-Examples of KIP listed in the literature include: _Trip Planning_; _Incident Troubleshooting_; and _Fracture Treatment_. In Appendix B of this document, some modeled KIP examples are provided.
+Some examples of KIP are found in literature, such as: _Trip Planning_; _Incident Troubleshooting_; and _Fracture Treatment_. In [Appendix B](#appendix-b-kip-examples) of this document, some modeled KIP examples are provided.
 
 # III. KIP Representation
 
@@ -200,7 +200,9 @@ After enactment, logs of each process and instance execution are recorded. Analy
 
 # References
 
-TODO
+DI CICCIO, C.; MARRELLA, A.; RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", _Journal on Data Semantics_, v. 4, n. 1 (April), pp. 29-57.
+
+VACULIN, R., HULL, R., HEATH, T., et al., "Declarative business artifact centric modeling of decision and knowledge intensive business processes". In: _Proceedings of the 15th International Enterprise Distributed Object Computing Conference_, Helsinki, Finland. 2011. pp. 151-160.
 
 # Appendix A. KIP Notations
 
