@@ -208,11 +208,26 @@ VACULIN, R., HULL, R., HEATH, T., et al., "Declarative business artifact centric
 
 # Appendix A. KIP Notations
 
-  * TODO
+Notations are used to represent a process model. Thus, this section presents some notations found in the literature focused on KIPs.
+
+<table>
+    <thead>
+        <tr>
+            <th>Notation</th>
+            <th>Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Reference, et al. (2019)</td>
+        </tr>
+    </tbody>
+</table>
 
 # Appendix B. KIP Examples
 
-In order to better expose the KIP phenomenon this section brings examples to expose how process are in fact complex and non-deterministic.
+In order to better understanding the KIP phenomenon this section brings some examples to expose how this kind of process are in fact complex and non-deterministic.
 
 <table>
     <thead>
@@ -223,16 +238,8 @@ In order to better expose the KIP phenomenon this section brings examples to exp
     </thead>
     <tbody>
         <tr>
-            <td><a href="example/trip/">Trip Planning</a></td>
-            <td>The Trip Planning process attempts to support a traveler to plan a trip.</td>
-        </tr>
-        <tr>
-            <td>Fracture Clinic</td>
-            <td>The Fracture Clinic process.</td>
-        </tr>
-        <tr>
-            <td>Agile Process</td>
-            <td>The Agile Software Process.</td>
+            <td><a href="example/trip-planning/">Trip Planning</a></td>
+            <td>Process that aims to support a traveler to plan a trip.</td>
         </tr>
     </tbody>
 </table>
