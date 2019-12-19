@@ -238,7 +238,7 @@ In order to better understanding the KIP phenomenon this section brings some exa
     </thead>
     <tbody>
         <tr>
-            <td><a href="example/trip/">Trip Planning</a></td>
+            <td><a href="example/trip-planning/">Trip Planning</a></td>
             <td>Process that aims to support a traveler to plan a trip.</td>
         </tr>
     </tbody>
