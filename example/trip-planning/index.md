@@ -6,7 +6,7 @@ toc: true
 toc_label: "Trip Planning Example"
 ---
 
-### Scenario
+## Scenario
 
 Planning a trip is a recurring endeavor that usually requires the execution of a set of activities, such as:
 
@@ -23,7 +23,7 @@ To facilitate this procedure the traveler might just set the initial parameters 
 
 A more intrepid traveler might enjoy the do-it-yourself approach and spend hours - possibly days - navigating on several websites to better understand the options available, and create a bespoke traveling experience. However, dates may be flexible and travelers want to fly on cheaper flights. Maybe the itinerary is flexible and travelers want to explore local hidden gems. Maybe after talking about the travel plans on a family Sunday lunch, Grandma decides to jump in!
 
-### TODO list
+## TODO list
 
 In order to organize and control the Trip Planning Procedure the intrepid traveler may create a simple TODO list to expose the activities and associated information required to complete the plan. The list might be executed as per the traveler's discretion but some rules must be followed such as setting the initial parameters (itinerary, dates, travelers) upfront. Fig. 1 brings a [BPMN](http://www.bpmn.org/) (Business Processes Modeling and Notation) process model to represent the TODO list in a "sophisticated" way.
 
@@ -33,7 +33,7 @@ Besides representing the activities, Fig. 1 process model attempts to expose a s
 
 A simple  answer to these questions is: The flow of activities depends on the traveler's context. The traveler's context may be simple if the traveler is traveling alone, to a single destination. In this scenario the traveler might be able to make straightforward decisions thus executing most of the activities once, without requiring following a complex process model with several gateways, loops and messages. On the other hand, the traveler's context may be complex, involving several travelers with different needs (remember gramma!) and multiple destinations, which brings issues related to [collaborative decisions](https://pdfs.semanticscholar.org/e513/012a806d70c66b80dfd3dd5d14a2b4efafaa.pdf). This complex context may require several loops, gateways and peer reviews to make sure most of the needs are met. As a result, creating a one-model-fits-all seems unproductive, if not impossible. Still, one can argue the model may be created by a trip planning expert but it is important to understand the intrepid traveler is a knowledge worker with a sophisticated decision making attitude who is capable of tweaking the trip parameters to achieve a better goal, and forcing a pre-established flow of activities may hamper reaching this goal.
 
-### KIP modeling
+## KIP modeling
 
 A better way to represent the Trip Planning Procedure is using the [Knowledge-intensive Process](https://doi.org/10.1007/s13740-014-0038-4) concepts where the process model may indicate an accepted flow of activities, but the traveler is free to combine the activities to fit his/her needs. For example, Fig. 2 illustrates a simple flow where the traveler decides on the initial parameters, then he/she deals with the airline, hotels, car, insurance and attractions sequentially. The process model is then used as a guide to help the intrepid traveler understanding what needs to be executed to plan the trip.
 
@@ -43,7 +43,7 @@ A further look at Fig. 2 exposes some activities (the purple ones) have a '+' si
 
 {% include figure image_path="/example/trip-planning/tp_complexflow.png" alt="Trip Planning Complex Flow" caption="Fig. 3 - Trip Planning Complex Flow" %}
 
-### Enactment and improvement
+## Enactment and improvement
 
 At the end of the day, our intrepid traveler may end up executing dozens of tasks depending on his/hers particular context. Moreover, planning a trip is a recurring procedure and this process model may be enacted by different travelers, sometimes sharing the same context and following similar flows. The resulting log illustrated by Fig. 4 exposes traces with the tasks executed by each traveler. For example, _Traveler John_ enacted the process twice (planning two trips) and _Traveler Greg_ enacted the process once. The differences between each trace indicates it may be hard to impose a prescribed sequence of tasks, even if the process engineer considers all travelers managed to reach the process endpoint and skip representing specialized escape flows. It is also important to point out traces do not only differ based on task sequences but also on unplanned tasks. Unplanned tasks (gray nodes) occur when a traveler executes a task that was not part of the original process model, indicating the process model may be incomplete and did not fit well to the travelers context.
 
