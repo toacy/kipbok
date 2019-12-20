@@ -42,9 +42,11 @@ Some examples of KIP are found in literature, such as: _Trip Planning_; _Inciden
 
 To represent real world scenarios, we can use process models. A process model is a way of structuring a Business Process Management (BPM), and indicates the elements that can be used as abstractions for organizing the process's activities and to facilitate the understanding of their interrelationships. Process Models can be formal or informal. A _formal process model_ precisely describes a flow of work and is typically executed using a Workflow Management System (WMS) or a Process Aware Information System (PAIS). On the other hand an _informal process model_ is usually interpreted by humans and used as a discussion or documentation tool.
 
-A process model can be represented with several languages or notations. Although most notations share some similarities and are capable of representing process abstractions such as activities, sequencing and decisions, there are conceptual differences between them. Some notations are activity-centric, where a process is composed of activities representing units of work, and control ﬂow elements determine the order of activity execution. Others are data-centric, where  a process progresses based on the availability of data and their values at a given point in time. Some examples of activity-centric notations are [BPMN](), [YAWL](), [UML Activity Diagrams](), [Event-driven Process Chains (EPC)]() and [Petri Nets](), while the big exponent of the data-centric notation is [CMMN](). Both BPMN and CMMN are notations maintained by The Object Management Group (OMG) for modeling processes. ([Merrella et al., 2016](https://ieeexplore.ieee.org/document/7399100))
+A process model can be represented with several languages or notations. Although most notations share some similarities and are capable of representing process abstractions such as activities, sequencing and decisions, there are conceptual differences between them. Some notations are activity-centric, where a process is composed of activities representing units of work, and control ﬂow elements determine the order of activity execution. Others are data-centric, where a process progresses based on the availability of data and their values at a given point in time. Some examples of activity-centric notations are [BPMN](), [YAWL](), [UML Activity Diagrams](), [Event-driven Process Chains (EPC)]() and [Petri Nets](), while the big exponent of the data-centric notation is [CMMN](). Both BPMN and CMMN are notations maintained by The Object Management Group (OMG) for modeling processes. ([Merrella et al., 2016](https://ieeexplore.ieee.org/document/7399100))
 
-Another form to represent a knowledge-intensive process is through an ontology. Ontology is an explicit and formal representation of a shared conceptualization. It represents an unequivocal abstraction of reality, one that is comprehensible by humans for communication purposes. KIPO (knowledge-intensive process ontology) is an ontology proposed to precisely represent the concepts comprised in a knowledge-intensive processes and to identify all aspects involved within it. It was developed to describe KIP considering complementary perspectives, which were organized in sub-ontologies grouping relevant concepts of a KiP: Business Process Ontology (BPO), Collaborative Ontology (CO), Decision Ontology (DO) and Business Rules Ontology (BRO), integrated through a core ontology (KIPCO) that regard the essential attributes of a KIP. It enable a precise interpretation and a deeper exploration of all relevant concepts comprised within a KiP. KIPO argues that a KIP execution is driven by the agent intentions towards achieving the process objectives, and that the flow of activities (especially decision-making) within a KIP execution is deeply influenced by tacit elements from its stakeholders, such as Beliefs, Desires, Intentions, and Perceptions. This ontology is well-founded on UFO (Unified Foundational Ontology), a foundational ontology based on philosophic and cognitive theories. ([França et al., 2015](https://www.researchgate.net/publication/282939286_KIPO_the_knowledge-intensive_process_ontology), [Santoro and Baião, 2018](https://www.researchgate.net/publication/322522928_Knowledge-intensive_Process_A_Research_Framework), [Estrada-Torres et al., 2019](https://www.researchgate.net/publication/330918205_Measuring_Performance_in_Knowledge-intensive_Processes))
+Another form to represent a Knowledge-intensive Process is through an ontology. Ontology is an explicit and formal representation of a shared conceptualization. It represents an unequivocal abstraction of reality, one that is comprehensible by humans for communication purposes. KIPO (Knowledge-intensive Process ontology) is an ontology proposed to precisely represent the concepts comprised in a Knowledge-intensive Processes and to identify all aspects involved within it. It was developed to describe KIP considering complementary perspectives, which were organized in sub-ontologies grouping relevant concepts of a KiP: Business Process Ontology (BPO), Collaborative Ontology (CO), Decision Ontology (DO) and Business Rules Ontology (BRO), integrated through a core ontology (KIPCO) that regard the essential attributes of a KIP. It enable a precise interpretation and a deeper exploration of all relevant concepts comprised within a KiP. KIPO argues that a KIP execution is driven by the agent intentions towards achieving the process objectives, and that the flow of activities (especially decision-making) within a KIP execution is deeply influenced by tacit elements from its stakeholders, such as Beliefs, Desires, Intentions, and Perceptions. This ontology is well-founded on UFO (Unified Foundational Ontology), a foundational ontology based on philosophic and cognitive theories. ([França et al., 2015](https://www.researchgate.net/publication/282939286_KIPO_the_knowledge-intensive_process_ontology), [Santoro and Baião, 2018](https://www.researchgate.net/publication/322522928_Knowledge-intensive_Process_A_Research_Framework), [Estrada-Torres et al., 2019](https://www.researchgate.net/publication/330918205_Measuring_Performance_in_Knowledge-intensive_Processes))
+
+This document illustrates most of the process models with BPMN (Business Process Modeling Notation) as BPMN is recognized as the de facto process modeling language. CMMN (Case Management Modeling Notation) is also used, as CMMN allows representing flexible workflows that can be called from BPMN process or executed standalone. Both notations, BPMN and CMMN, are supported by several tool vendors (SAP, IBM, BizAgi, Signavio, Camunda, etc.) and can describe formal or informal processes. It is important to mention KIPs may require other abstractions than those found in BPMN and CMMN as exposed in [KIPO](https://link.springer.com/article/10.1007/s10270-014-0397-1), but we will annotate the model when required.
 
 ## BPMN
 
@@ -56,7 +58,7 @@ Fig. 2 shows the elements used in BPMN models, while Fig. 3 represents a example
 
 {% include figure image_path="/assets/image/bpmn-elements.png" alt="BPMN elements" caption="Fig. 2 - BPMN elements ([Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
 
-{% include figure image_path="/assets/image/sum.png" alt="Simple Addition Process" caption="Fig. 3 - Example of Simple Addition Process" %}
+{% include figure image_path="/assets/image/sum.png" alt="Simple Addition Process in BPMN" caption="Fig. 3 - Example of Simple Addition Process in BPMN" %}
 
 More information on BPMN models can be found in a [quick guide here](http://www.bpmnquickguide.com/quickguide/index.html?bpmn_examples.htm) and in the [official documentation here](https://www.omg.org/spec/BPMN/2.0/).
 
@@ -86,73 +88,69 @@ A nice explanation about the CMMN elements [can be seen here](http://knut.hinkel
 
 # IV. KIP life cycle
 
+A [life cycle](https://www.merriam-webster.com/dictionary/life%20cycle) is defined as "_a series of stages through which something (such as an individual, culture, or manufactured product) passes during its lifetime_". Processes have life cycles as they are created, executed and in some way finalized.
+
 A process life cycle can be seen as a collection of _stages_ and associated _operations_ that allow intra or inter stages transitions. A _Process Stage_ can be defined as a place sharing common definitions such as a common metamodel or the same representation language. For example a Java program may seen as having two stages, one as the Java source-code and another as the Java byte-code. The Java source-code is defined by the [Java grammar](https://docs.oracle.com/javase/specs/jls/se7/html/jls-18.html) while the Java byte-code has it's own [file format](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html).
 
-_Transitions_ can be defined as operations allowing concepts (files) moving from one stage to another (inter stage transition) or staying in the same stage with a different configuration (intra stage transition). Going back to the Java program example we can see the Java compiler as an inter stage transition as it compiles Java source-code into Java byte-code. On the other hand, a Java refactoring tool can be seen as an intra stage transition as the input and output files are both Java source-code.  
+_Transitions_ can be defined as operations allowing concepts (files) moving from one stage to another (inter stage transition) or staying in the same stage with a different configuration (intra stage transition). Going back to the Java program example we can see the Java compiler as an inter stage transition as it compiles Java source-code into Java byte-code. On the other hand, a Java refactoring tool can be seen as an intra stage transition as the input and output files are both Java source-code.
 
 Using stages and transitions abstractions to understand the life cycle for Knowledge-intensive Processes allows us to isolate and dissect concepts according to an specific rationale, and provide a didactic and systematic way to explore the phenomena. Moreover, stages and transitions abstractions are commonly used in Model Driven Engineering so we can leverage on some of its frameworks and tools.
 
-We will illustrate most of the process models used in this text with BPMN (Business Process Modeling Notation) as BPMN is recognized as the de facto process modeling language. We will also use CMMN (Case Management Modeling Notation), as CMMN allows representing flexible workflows that can be called from BPMN process or executed standalone. Both notations, BPMN and CMMN, are supported by several tool vendors (SAP, IBM, BizAgi, Signavio, Camunda, etc.) and can describe formal or informal processes. It is important to mention KIPs may require other abstractions than those found in BPMN and CMMN as exposed in [KIPO](https://link.springer.com/article/10.1007/s10270-014-0397-1), but we will annotate the model when required.  
-
-## Life cycle
-
-A [life cycle](https://www.merriam-webster.com/dictionary/life%20cycle) is defined as "_a series of stages through which something (such as an individual, culture, or manufactured product) passes during its lifetime._" Processes have life cycles as they are created, executed and in some way finalized. We define the pre-birth stage of a process as the _Conceptual Stage_ where processes are experimented without paying attention to the representation language. Then a process can be _materialized_ using a formal representation language as a process model and move on to the _Process Model Stage_. Representing process models with a formal notation is important as it facilitates using several analytical tools such as model-checkers, quality assessment, workflow management systems, compliance monitoring, process mining, etc. Moreover, using a standard notation such as BPMN and CMMN promotes information sharing among the process community.
-
-The _Working Plan_ is the next stage, when the Process Model can be _instantiated_ into several different instances. These instances can also be seen as each time the process is executed, totally or partially. At this stage, workers can work on specific chunks of tasks that have information such as their own due date, for example, and are part of a bigger project plan. 
-
-_Logs_ are generated for each step of the instance execution, called _enactments_. This is the next stage of the life cycle. Whether each chunk of the instance is created or edited, modifications will be logged. These logs enable future analysis on how much compliant the execution was in regard to the Process Model. 
-
-More details on each of the stages and transitions are below. 
+{% include figure image_path="/assets/image/kip-lifecycle.png" alt="KIP life cycle" caption="Fig. 6 - KIP life cycle" %}
 
 ## KIP Stages
 
-{% include figure image_path="/assets/image/kip-lifecycle.png" alt="KIP Lifecycle" caption="Fig. 6 - KIP Lifecycle" %}
+This section describes the four stages proposed in this document (Fig. 6): _Conceptual Stage_; _Process Model Stage_; _Working Plan_; and _Log Stage_;
 
 ### Conceptual
 
-Tacit knowledge is a big asset when performing knowledge-intensive processes. Although not explicitly materialized, tacit knowledge, which can also be seen as the experience of the worker, comprises one of the elements in the Conceptual View. Bodies of knowledge are also part of this Conceptual View. Examples of bodies of knowledge are knowledge bases, wikis, product reference manuals and documentation, and even maturity models or ISO documentations. Conceptual information can be either expressed in Natural Language or Structured Natural Language.
+In the _Conceptual Stage_, processes are experimented without paying attention to the representation language. Tacit knowledge is a big asset when performing Knowledge-intensive Processes. Although not explicitly materialized, tacit knowledge, which can also be seen as the experience of the worker, comprises one of the elements in the Conceptual View. Bodies of knowledge are also part of this Conceptual View. Examples of bodies of knowledge are knowledge bases, wikis, product reference manuals and documentation, and even maturity models or ISO documentations. Conceptual information can be either expressed in Natural Language or Structured Natural Language.
 
 ### Process Model
 
-Process Model stage is when processes can be modeled and expressed into a set of activities and their dependencies. Processes are extracted (reified) from the available concepts (Conceptual View), and created according to the methodology of the process defined. Processes have information such as the activity name, role, artifact, flow, decision, event, and rule.
+In the _Process Model Stage_, the process is _materialized_ using a formal representation language. Representing process models with a formal notation is important as it facilitates using several analytical tools such as model-checkers, quality assessment, workflow management systems, compliance monitoring, process mining, etc. Moreover, using a standard notation such as BPMN and CMMN promotes information sharing among the process community.
 
-- *Activity* is the identification a piece of work that needs to be performed when executing the process.
-- *Role* is the identification of which department, person or external parties are responsible for the execution of the activities.
-- *Artifact* is the data that can be used as input or is the output of each activity. 
-- *Flow* is the direction of the activity. It indicates whatever occurs before and after each activity.
-- *Decision* is when there is the need to act upon occurrences that are optional. It can either result in the execution of an activity, or multiple activities, as well as it can lead to another decision or artifact.
-- *Events* are instant occurrences in the process. They usually have a cause and an impact.
-- *Rules* can be defined as the constraints that processes should consider when executed.
+In this scenario, processes can be modeled and expressed into a set of activities and their dependencies. Processes are extracted (reified) from the available concepts (Conceptual View), and created according to the methodology of the process defined. Processes have information such as the activity name, role, artifact, flow, decision, event, and rule.
 
-Processes’ activities can be tailored or merged. Tailoring means It is possible to customize a process for a specific instance execution on the next stage - the Work Plan - and merging means it is possible to execute two or more process activities at once. Merging activities also means changes will occur from this stage of the life cycle on. 
+  * Activity is the identification a piece of work that needs to be performed when executing the process.
+  * Role is the identification of which department, person or external parties are responsible for the execution of the activities.
+  * Artifact is the data that can be used as input or is the output of each activity. 
+  * Flow is the direction of the activity. It indicates whatever occurs before and after each activity.
+  * Decision is when there is the need to act upon occurrences that are optional. It can either result in the execution of an activity, or multiple activities, as well as it can lead to another decision or artifact.
+  * Events are instant occurrences in the process. They usually have a cause and an impact.
+  * Rules can be defined as the constraints that processes should consider when executed.
+
+Processes’ activities can be tailored or merged. Tailoring means it is possible to customize a process for a specific instance execution on the next stage - the Work Plan - and merging means it is possible to execute two or more process activities at once. Merging activities also means changes will occur from this stage of the life cycle on. 
 
 ### Working Plan
 
-The Working Plan stage represents the moment process activities, methodology, technical tacit or explicit knowledge are represented by chunks of work meant to be done. One process generates one or more work plans. One working plan has information such as task, person, milestone, flow, decision, event and iteration. 
+In the _Working Plan Stage_, the process model is _instantiated_ into several different instances. hese instances can also be seen as each time the process is executed, totally or partially. At this stage, workers can work on specific chunks of tasks that have information such as their own due date, for example, and are part of a bigger project plan.
 
-- *Task* is a chunk of executable work.
-- *Person* is whoever is responsible for working on that task. This person should also be responsible for communicating occurrences while working on each task. 
-- *Milestone* is the goal that a set of tasks is supposed to reach. 
-- *Flow* is the indication of which task is executed before and which task is executed after a task.
-- *Decision* …
-- *Event* … 
-- *Iteration* is each set of tasks that can produce a minimum deliverable. The tasks to be executed in each iteration are selected at total discretion of the project manager and team, according to what’s been agreed with the client/stakeholders. 
+In this scenario, the moment process activities, methodology, technical tacit or explicit knowledge are represented by chunks of work meant to be done. One process model generates one or more work plans. A working plan has information such as task, person, milestone, flow, decision, event and iteration. 
 
-Communications, task length definition in this stage depend on people, which makes the process vary according to decisions made when either planning or executing a task. What information is relevant to a person can also vary. These characteristics of knowledge-intensive processes are evident at this stage. 
+  * Task is a chunk of executable work.
+  * Person is whoever is responsible for working on that task. This person should also be responsible for communicating occurrences while working on each task. 
+  * Milestone is the goal that a set of tasks is supposed to reach. 
+  * Flow is the indication of which task is executed before and which task is executed after a task.
+  * Decision represents the decision-making associated with processes and cases (e.g., business decisions and business rules).
+  * Event is something that happens during the course of a flow.
+  * Iteration is each set of tasks that can produce a minimum deliverable. The tasks to be executed in each iteration are selected at total discretion of the project manager and team, according to what’s been agreed with the client/stakeholders. 
+
+Communications, task length definition in this stage depend on people, which makes the process vary according to decisions made when either planning or executing a task. What information is relevant to a person can also vary. These characteristics of Knowledge-intensive Processes are evident at this stage.
 
 ### Log
 
-When each task is executed at the Working Plan stage, i.e, a person performed the work described in a task, the task is updated with information regarding the execution. Information such as date and hour of completion, who was responsible for completing the task, and all sorts of information can be collected regarding a task and its workflow. 
+In the _Log Stage_, logs are generated for each step of the instance execution, called _enactments_. Whether each chunk of the instance is created or edited, modifications will be logged. These logs enable future analysis on how much compliant the execution was in regard to the process model.
 
-Logs allow the identification of repetitive patterns during execution, which can become improvements in the process. 
-
-Next, each transformation tasks can undergo will be detailed.
+In this scenario, when each task is executed, e.g., a person performed the work described in a task, the task is updated with information regarding the execution. Information such as date and hour of completion, who was responsible for completing the task, and all sorts of information can be collected regarding a task and its workflow. Logs allow the identification of repetitive patterns during execution, which can become improvements in the process.
 
 ## KIP Transitions
 
 Although using standard processes result in positive outcomes such as predictability, performance and reliability, different businesses and environments might have their own specific requirements. To comply with these differentials, a standard process might need to endure minor changes. These changes can be reification, tailoring or merging processes and/or its activities. In other words, a process suffers adaptations in order to comply with specific needs of organizations or projects. 
 
-Each of these adaptations can result in one or multiple process transformations. These transformations are specific and different throughout each stage change. Also, processes can suffer instantiation, enactment and improvements, even when they are not necessarily changed between stages. Read below to understand the differences of each transformation and/or adaptation processes can undergo. 
+Each of these adaptations can result in one or multiple process transformations. These transformations are specific and different throughout each stage change. Also, processes can suffer instantiation, enactment and improvements, even when they are not necessarily changed between stages.
+
+This section describes the five transitions proposed in this document (Fig. 6): _Reification_; Tailoring_; Instantiation_; _Execution/Enactment_; and _Improvement_;
 
 ### Reification
 
