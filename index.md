@@ -32,9 +32,9 @@ Knowledge-intensive Processes (KIPs) are everywhere but sometimes they are recog
 
 Although this document adopts the term Knowledge-intensive Process (KIP), this kind of process is discussed in the literature through different synonyms, such as: _Knowledge-intensive Business Processes (KIBP)_; _Intentional Processes_; _Goal-Oriented Processes_; _Knowledge-Driven Processes_; _Decision-intensive Processes_; _Hybrid Processes_; and _Flexible Processes_.
 
-In this scenario, KIPs are processes whose conduct and execution are heavily dependent on knowledge workers performing various interconnected knowledge intensive decision-making tasks. KiPs are genuinely knowledge, information and data centric and require substantial flexibility at design- and run-time (Vaculin et al., 2011).
+In this scenario, KIPs are processes whose conduct and execution are heavily dependent on knowledge workers performing various interconnected knowledge intensive decision-making tasks. KiPs are genuinely knowledge, information and data centric and require substantial flexibility at design- and run-time (VACULIN et al., 2011).
 
-According to Di Ciccio et al. (2014), the main characteristics of KIPs are: _Knowledge-driven_; _Collaboration-oriented_; _Unpredictable_; _Emergent_; _Goal-oriented_; _Event-driven_; _Constraint- and rule-driven_; and _Non-repeatable_.
+According to DI CICCIO et al. (2014), the main characteristics of KIPs are: _Knowledge-driven_; _Collaboration-oriented_; _Unpredictable_; _Emergent_; _Goal-oriented_; _Event-driven_; _Constraint- and rule-driven_; and _Non-repeatable_.
 
 Some examples of KIP are found in literature, such as: _Trip Planning_; _Incident Troubleshooting_; and _Fracture Treatment_. In [Appendix B](#appendix-b-kip-examples) of this document, some modeled KIP examples are provided.
 
