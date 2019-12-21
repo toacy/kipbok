@@ -8,11 +8,11 @@ toc_label: "KIPBOK"
 
 # I. Introduction
 
-Processes are important pieces in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a typical procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_.
+Processes are important pieces in modern society and they help controlling, documenting and standardizing the interactions between businesses, consumers, governments, individuals and other organizations. Tasks, roles, artifacts, goals, rules and their relationships are central abstractions that processes use to determine stepwise recipes used by individuals and systems when navigating through a procedure, such as _Claiming Insurance_ or _Buying Airline Tickets_.
 
-Processes eventually are materialized, by some explicit representation, to organize activities, coordinate the enactment and analyze its results. Process modeling languages are the notations used to represent processes, whoses more popular examples are [BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN/) (Business Process Management Notation) and [CMMN](https://www.omg.org/cmmn/) (Case Management Modeling Notation). The materialized processes is known as process model and it can be fed to a workflow automation plataform for automatic or semi-automatic execution, analysis or simulation.
+Processes eventually are materialized, by some explicit representation, to organize activities, coordinate the enactment and analyze its results. Process modeling languages are the notations used to represent processes, whoses more popular examples are [BPMN](https://www.omg.org/spec/BPMN/2.0/About-BPMN/) (Business Process Management Notation) and [CMMN](https://www.omg.org/cmmn/) (Case Management Modeling Notation). The materialized process is known as process model and it can be fed to a workflow automation plataform for automatic or semi-automatic execution, analysis or simulation.
 
-Processes can be found in "simple scenarios" such as in our daily visit to a coffee-shop, where baristas are prepping several different types of Lattes, Cappuccinos, Macchiatos, Iced Coffees, etc. Each order follows a combination of pre-defined recipes (i.e., kind of process) and user defined customization (i.e., process tailoring) based on several types of coffee beans, different types of milk, special shots for flavoring, etc. In addition, processes can also be present in complex scenarios such as disease treatment, where doctors, nurses, patient and hospitals collaborate to deal with a sophisticated web of information that relates symptoms, diseases, treatment procedures and resource allocation.
+Processes can be found in "simple scenarios" such as in our daily visit to a coffee-shop, where baristas are prepping several different types of Lattes, Cappuccinos, Macchiatos, Iced Coffees, etc. Each order follows a combination of pre-defined recipes (kind of process) and user defined customization (process tailoring) based on several types of coffee beans, different types of milk, special shots for flavoring, etc. In addition, processes can also be present in complex scenarios such as disease treatment, where doctors, nurses, patient and hospitals collaborate to deal with a sophisticated web of information that relates symptoms, diseases, treatment procedures and resource allocation.
 
 Some processes are perceived as streamlined procedures (Fig. 1 - left example) that regulate and systematize each individual participation while indicating the required flow of actions and information. However, with the rise of knowledge-based industries such as financial, health care, software development and insurance, process participants are said to be knowledge-workers (KWs) that should be supported by a flexible computational infrastructure that do not constrain decisions at run-time. In such a modern industry, process execution depends on an intricate combination of context dependent information, emerging actions/tasks and collaboration (Fig. 1 - right example), where individuals take a special place as they typically use explicit but surely implicit knowledge to make decisions.
 
@@ -32,7 +32,7 @@ Knowledge-intensive Processes (KIPs) are everywhere but sometimes they are recog
 
 Although this document adopts the term Knowledge-intensive Process (KIP), this kind of process is discussed in the literature through different synonyms, such as: _Knowledge-intensive Business Processes (KIBP)_; _Intentional Processes_; _Goal-Oriented Processes_; _Knowledge-Driven Processes_; _Decision-intensive Processes_; _Hybrid Processes_; and _Flexible Processes_.
 
-In this scenario, KIPs are processes whose conduct and execution are heavily dependent on knowledge workers performing various interconnected knowledge intensive decision making tasks. KiPs are genuinely knowledge, information and data centric and require substantial flexibility at design- and run-time (Vaculin et al., 2011).
+In this scenario, KIPs are processes whose conduct and execution are heavily dependent on knowledge workers performing various interconnected knowledge intensive decision-making tasks. KiPs are genuinely knowledge, information and data centric and require substantial flexibility at design- and run-time (Vaculin et al., 2011).
 
 According to Di Ciccio et al. (2014), the main characteristics of KIPs are: _Knowledge-driven_; _Collaboration-oriented_; _Unpredictable_; _Emergent_; _Goal-oriented_; _Event-driven_; _Constraint- and rule-driven_; and _Non-repeatable_.
 
@@ -68,9 +68,9 @@ More information on BPMN models can be found in a [quick guide here](http://www.
 
 Many processes are semi-structured, meaning that they describe work that is non-routine, so unpredictable. The structure of such a process depends on the specific case that is handled in the process. Applying BPMN (or other activity-centric notation) to semi-structured processes leads to problems, since its support systems cannot provide context information about the cases being processed and do not offer the flexibility that is needed to handle unexpected changes. Therefore, Adaptive Case Management (ACM) has been proposed to support such semi-structured processes.
 
-ACM is an approach to support knowledge workers who need ﬂexibility in handling their work. The term "case" is used in contrast to process to denote unstructured work, which is data-driven and highly unpredictable and therefore cannot be deﬁned in advance. Knowledge workers need to be able to modify all aspects of a case at any time based on their knowledge and expertise. This is because the work conducted within a case is signiﬁcantly based on decisions made on the ﬂy by knowledge workers depending on the available data, the current circumstances and occurring contingencies. To comply with ACM standards, a model need to be able to support decision making and data capture while providing the freedom for knowledge workers to apply their own understanding and subject matter expertise to respond to unique or changing circumstances within the business environment.
+ACM is an approach to support knowledge workers who need ﬂexibility in handling their work. The term "case" is used in contrast to process to denote unstructured work, which is data-driven and highly unpredictable and therefore cannot be deﬁned in advance. Knowledge workers need to be able to modify all aspects of a case at any time based on their knowledge and expertise. This is because the work conducted within a case is signiﬁcantly based on decisions made on the ﬂy by knowledge workers depending on the available data, the current circumstances and occurring contingencies. To comply with ACM standards, a model need to be able to support decision-making and data capture while providing the freedom for knowledge workers to apply their own understanding and subject matter expertise to respond to unique or changing circumstances within the business environment.
 
-Data exchange is the center of attention in ACM. Data represent either the input streams in the Case Management process and the outputs of the Case Management tasks. By capturing data, what is really captured is knowledge about the case that is executed and experience that will be valuable to future similar knowledge work. In some extent, the system leaves its users (knowledge workers) free to prioritize the sequence of their activities in their own way, even to change it on runtime as there is great need to be agile and adaptive in these humancentric environments. Because of that, ACM is often linked to Knowledge-intensive Processes (KiPs), because a KiP is a business process whose structure and execution heavily depends on knowledge workers performing various interconnected knowledge-intensive decision making tasks. Hence, ACM is considered to support KiPs better than BPMN.
+Data exchange is the center of attention in ACM. Data represent either the input streams in the Case Management process and the outputs of the Case Management tasks. By capturing data, what is really captured is knowledge about the case that is executed and experience that will be valuable to future similar knowledge work. In some extent, the system leaves its users (knowledge workers) free to prioritize the sequence of their activities in their own way, even to change it on runtime as there is great need to be agile and adaptive in these humancentric environments. Because of that, ACM is often linked to Knowledge-intensive Processes (KiPs), because a KiP is a business process whose structure and execution heavily depends on knowledge workers performing various interconnected knowledge-intensive decision-making tasks. Hence, ACM is considered to support KiPs better than BPMN.
 
 However, ACM is not a modeling notation, but a paradigm, a collection of concepts and practices. The industrial interest in prospecting the potential of ACM led to a standardization process under the roof of the Open Management Group in 2014, resulting in a standard notation for ACM process models called Case Management Model and Notation (CMMN). Heavily inﬂuenced by an artefact-centric view of processes, the Guard-Stage-Milestone approach and the case handling paradigm, it aims to become a standard for case management.
 
@@ -100,7 +100,7 @@ Using stages and transitions abstractions to understand the life cycle for Knowl
 
 ## KIP Stages
 
-This section describes the four stages proposed in this document (Fig. 6): _Conceptual Stage_; _Process Model Stage_; _Working Plan_; and _Log Stage_;
+This section describes the four stages proposed in this document (Fig. 6): _Conceptual Stage_; _Process Model Stage_; _Working Plan_; and _Log Stage_.
 
 ### Conceptual
 
@@ -150,7 +150,7 @@ Although using standard processes result in positive outcomes such as predictabi
 
 Each of these adaptations can result in one or multiple process transformations. These transformations are specific and different throughout each stage change. Also, processes can suffer instantiation, enactment and improvements, even when they are not necessarily changed between stages.
 
-This section describes the five transitions proposed in this document (Fig. 6): _Reification_; Tailoring_; Instantiation_; _Execution/Enactment_; and _Improvement_;
+This section describes the five transitions proposed in this document (Fig. 6): _Reification_; _Tailoring_; Instantiation_; _Execution/Enactment_; and _Improvement_.
 
 ### Reification
 
@@ -169,20 +169,15 @@ If at this point you're thinking "this is really hard to predict and it's a very
 Processes may need to be modified to comply with business or environment needs. These modifications are called tailoring. In other words, a main established process will be adapted when running certain instances. For example, if one project of a company works with hazardous materials, this project might need to run different steps in order to comply with safety obligations, but at the same time, this project also runs the main established organizational process. 
 One of the modification operations a process can experience is Merge. This means two or more process activities can be merged into one. 
 
-As an example, let's suppose a worker has to collect, verify and store measures (e.g., size and weight) of parcels that are supposed to be mailed to clients, so a system can forsee delivery expenses. 
-
-A simple example using a common notation (BPMN) is shown below. 
+As an example, let's suppose a worker has to collect, verify and store measures (e.g., size and weight) of parcels that are supposed to be mailed to clients, so a system can forsee delivery expenses. A simple example using a common notation (BPMN) is shown below. 
 
 After posting all parcels in the post office service, some prices may vary. The original process does not consider that measures and prices might have to be updated. A tailored process to include this unforeseen activity is illustrated below. One process activity was added to the original process.
 
 {% include figure image_path="/assets/image/TailoringExample.png" alt="1st Tailoring Example using BPMN" caption="Fig. 9 - 1st Tailoring Example using BPMN" %}
 
-Another (simpler) example is when an online store starts accepting debit as payment method for centain cases (for example, if a client purchase is over $100). Then, the debit card option has to be added to the process. This can be done using Tailoring. The blue elements below are the elements that were added during this process tailoring. 
+Another example is when an online store starts accepting debit as payment method for centain cases (for example, if a client purchase is over $100). Then, the debit card option has to be added to the process. This can be done using Tailoring. The blue elements below are the elements that were added during this process tailoring. 
 
 {% include figure image_path="/assets/image/TailoringExample2.png" alt="2nd Tailoring Example using BPMN" caption="Fig. 10 - 2nd Tailoring Example using BPMN" %}
-
-Source: PILLAT, R. (2018). BPMNt: A proposal for flexible process tailoring representation in BPMN. Tese de Doutorado. Universidade Federal do Rio de Janeiro, Brasil. 
-https://www.cos.ufrj.br/uploadfile/publicacao/2825.pdf
 
 ### Instantiation
 
@@ -200,7 +195,7 @@ After enactment, logs of each process and instance execution are recorded. Analy
 
 # References
 
-DI CICCIO, C.; MARRELLA, A.; RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", _Journal on Data Semantics_, v. 4, n. 1 (April), pp. 29-57.
+DI CICCIO, C., MARRELLA, A., RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", _Journal on Data Semantics_, v. 4, n. 1 (April), pp. 29-57.
 
 VACULIN, R., HULL, R., HEATH, T., et al., "Declarative business artifact centric modeling of decision and knowledge intensive business processes". In: _Proceedings of the 15th International Enterprise Distributed Object Computing Conference_, Helsinki, Finland. 2011. pp. 151-160.
 
