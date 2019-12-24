@@ -36,15 +36,15 @@ In this scenario, KIPs are processes whose conduct and execution are heavily dep
 
 According to DI CICCIO et al. (2014), the main characteristics of KIPs are: _Knowledge-driven_; _Collaboration-oriented_; _Unpredictable_; _Emergent_; _Goal-oriented_; _Event-driven_; _Constraint- and rule-driven_; and _Non-repeatable_.
 
-Some examples of KIP are found in literature, such as: _Trip Planning_; _Incident Troubleshooting_; and _Fracture Treatment_. In [Appendix B](#appendix-b-kip-examples) of this document, some modeled KIP examples are provided.
+Some examples of KIP are found in literature, such as: _Trip Planning_; _Incident Troubleshooting_; and _Fracture Treatment_. In [Appendix A](#appendix-a-kip-examples) of this document, some modeled KIP examples are provided.
 
 # III. KIP Representation
 
 To represent real world scenarios, we can use process models. A process model is a way of structuring a Business Process Management (BPM), and indicates the elements that can be used as abstractions for organizing the process's activities and to facilitate the understanding of their interrelationships. Process Models can be formal or informal. A _formal process model_ precisely describes a flow of work and is typically executed using a Workflow Management System (WMS) or a Process Aware Information System (PAIS). On the other hand an _informal process model_ is usually interpreted by humans and used as a discussion or documentation tool.
 
-A process model can be represented with several languages or notations. Although most notations share some similarities and are capable of representing process abstractions such as activities, sequencing and decisions, there are conceptual differences between them. Some notations are activity-centric, where a process is composed of activities representing units of work, and control ﬂow elements determine the order of activity execution. Others are data-centric, where a process progresses based on the availability of data and their values at a given point in time. Some examples of activity-centric notations are [BPMN](), [YAWL](), [UML Activity Diagrams](), [Event-driven Process Chains (EPC)]() and [Petri Nets](), while the big exponent of the data-centric notation is [CMMN](). Both BPMN and CMMN are notations maintained by The Object Management Group (OMG) for modeling processes. ([Merrella et al., 2016](https://ieeexplore.ieee.org/document/7399100))
+A process model can be represented with several languages or notations. Although most notations share some similarities and are capable of representing process abstractions such as activities, sequencing and decisions, there are conceptual differences between them. Some notations are activity-centric, where a process is composed of activities representing units of work, and control ﬂow elements determine the order of activity execution. Others are data-centric, where a process progresses based on the availability of data and their values at a given point in time. Some examples of activity-centric notations are [BPMN](), [YAWL](), [UML Activity Diagrams](), [Event-driven Process Chains (EPC)]() and [Petri Nets](), while the big exponent of the data-centric notation is [CMMN](). Both BPMN and CMMN are notations maintained by The Object Management Group (OMG) for modeling processes. 
 
-Another form to represent a Knowledge-intensive Process is through an ontology. Ontology is an explicit and formal representation of a shared conceptualization. It represents an unequivocal abstraction of reality, one that is comprehensible by humans for communication purposes. KIPO (Knowledge-intensive Process ontology) is an ontology proposed to precisely represent the concepts comprised in a Knowledge-intensive Processes and to identify all aspects involved within it. It was developed to describe KIP considering complementary perspectives, which were organized in sub-ontologies grouping relevant concepts of a KiP: Business Process Ontology (BPO), Collaborative Ontology (CO), Decision Ontology (DO) and Business Rules Ontology (BRO), integrated through a core ontology (KIPCO) that regard the essential attributes of a KIP. It enable a precise interpretation and a deeper exploration of all relevant concepts comprised within a KiP. KIPO argues that a KIP execution is driven by the agent intentions towards achieving the process objectives, and that the flow of activities (especially decision-making) within a KIP execution is deeply influenced by tacit elements from its stakeholders, such as Beliefs, Desires, Intentions, and Perceptions. This ontology is well-founded on UFO (Unified Foundational Ontology), a foundational ontology based on philosophic and cognitive theories. ([França et al., 2015](https://www.researchgate.net/publication/282939286_KIPO_the_knowledge-intensive_process_ontology), [Santoro and Baião, 2018](https://www.researchgate.net/publication/322522928_Knowledge-intensive_Process_A_Research_Framework), [Estrada-Torres et al., 2019](https://www.researchgate.net/publication/330918205_Measuring_Performance_in_Knowledge-intensive_Processes))
+Another form to represent a Knowledge-intensive Process is through an ontology. Ontology is an explicit and formal representation of a shared conceptualization. It represents an unequivocal abstraction of reality, one that is comprehensible by humans for communication purposes. KIPO (Knowledge-intensive Process ontology) is an ontology proposed to precisely represent the concepts comprised in a Knowledge-intensive Processes and to identify all aspects involved within it. It was developed to describe KIP considering complementary perspectives, which were organized in sub-ontologies grouping relevant concepts of a KiP: Business Process Ontology (BPO), Collaborative Ontology (CO), Decision Ontology (DO) and Business Rules Ontology (BRO), integrated through a core ontology (KIPCO) that regard the essential attributes of a KIP. It enable a precise interpretation and a deeper exploration of all relevant concepts comprised within a KiP. KIPO argues that a KIP execution is driven by the agent intentions towards achieving the process objectives, and that the flow of activities (especially decision-making) within a KIP execution is deeply influenced by tacit elements from its stakeholders, such as Beliefs, Desires, Intentions, and Perceptions. This ontology is well-founded on UFO (Unified Foundational Ontology), a foundational ontology based on philosophic and cognitive theories. 
 
 This document illustrates most of the process models with BPMN (Business Process Modeling Notation) as BPMN is recognized as the de facto process modeling language. CMMN (Case Management Modeling Notation) is also used, as CMMN allows representing flexible workflows that can be called from BPMN process or executed standalone. Both notations, BPMN and CMMN, are supported by several tool vendors (SAP, IBM, BizAgi, Signavio, Camunda, etc.) and can describe formal or informal processes. It is important to mention KIPs may require other abstractions than those found in BPMN and CMMN as exposed in [KIPO](https://link.springer.com/article/10.1007/s10270-014-0397-1), but we will annotate the model when required.
 
@@ -61,8 +61,6 @@ Fig. 2 shows the elements used in BPMN models, while Fig. 3 represents a example
 {% include figure image_path="/assets/image/sum.png" alt="Simple Addition Process in BPMN" caption="Fig. 3 - Example of Simple Addition Process in BPMN" %}
 
 More information on BPMN models can be found in a [quick guide here](http://www.bpmnquickguide.com/quickguide/index.html?bpmn_examples.htm) and in the [official documentation here](https://www.omg.org/spec/BPMN/2.0/).
-
-([Adensamer and Rueckel, 2018](https://www.researchgate.net/publication/326061168_Differences_Between_BPM_and_ACM_Models_for_Process_Execution); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
 
 ## CMMN
 
@@ -83,8 +81,6 @@ Fig. 4 shows the elements used in CMMN models, while Fig. 5 illustrates the same
 {% include figure image_path="/assets/image/sum_flex.png" alt="Simple Addition Process in CMMN" caption="Fig. 5 - Simple Addition Process in CMMN" %}
 
 A nice explanation about the CMMN elements [can be seen here](http://knut.hinkelmann.ch/lectures/bpm2015-16/04_CMMN.pdf) and in the [official documentation here](https://www.omg.org/spec/CMMN/About-CMMN/).
-
-([Pillaerds and Eshuis, 2017](https://www.semanticscholar.org/paper/ASSESSING-SUITABILITY-OF-ADAPTIVE-CASE-MANAGEMENT-Pillaerds/d4c6f7cc4ab9f24fac3b84052f8b7f5d01b468ee); [Routis et al., 2018](https://ieeexplore.ieee.org/document/8536102); [Lantow, 2018](https://www.researchgate.net/publication/328216689_Adaptive_Case_Management_-_A_Review_of_Method_Support_11th_IFIP_WG_81_Working_Conference_PoEM_2018_Vienna_Austria_October_31_-_November_2_2018_Proceedings); [Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))
 
 # IV. KIP life cycle
 
@@ -195,30 +191,30 @@ After enactment, logs of each process and instance execution are recorded. Analy
 
 # References
 
-DI CICCIO, C., MARRELLA, A., RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", _Journal on Data Semantics_, v. 4, n. 1 (April), pp. 29-57.
+[DI CICCIO, C., MARRELLA, A., RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", In: Journal on Data Semantics, v. 4, n. 1 (April), pp. 29-57.](https://www.researchgate.net/publication/269629902_Knowledge-Intensive_Processes_Characteristics_Requirements_and_Analysis_of_Contemporary_Approaches)
 
-VACULIN, R., HULL, R., HEATH, T., et al., "Declarative business artifact centric modeling of decision and knowledge intensive business processes". In: _Proceedings of the 15th International Enterprise Distributed Object Computing Conference_, Helsinki, Finland. 2011. pp. 151-160.
+[VACULIN, R., HULL, R., HEATH, T., et al., "Declarative business artifact centric modeling of decision and knowledge intensive business processes". In: Proceedings of the 15th International Enterprise Distributed Object Computing Conference, Helsinki, Finland. 2011. pp. 151-160.](https://ieeexplore.ieee.org/document/6037569)
 
-# Appendix A. KIP Notations
+[PILLAERDS, J., ESHUIS, R., 2017, "Assessing suitability of adaptive case management". In: ECIS 2017 Proceedings.](https://www.semanticscholar.org/paper/ASSESSING-SUITABILITY-OF-ADAPTIVE-CASE-MANAGEMENT-Pillaerds/d4c6f7cc4ab9f24fac3b84052f8b7f5d01b468ee)
 
-Notations are used to represent a process model. Thus, this section presents some notations found in the literature focused on KIPs.
+[ROUTIS, I., NIKOLAIDOU, M., ALEXOPOULOU, N., ANAGNOSTOPOULOS, D., 2018,
+"Empowering Knowledge Workers with CMMN: The Concept of Case Learning". In: EDOC Workshops 2018: 33-36.](https://ieeexplore.ieee.org/document/8536102)
 
-<table>
-    <thead>
-        <tr>
-            <th>Notation</th>
-            <th>Reference</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Name</td>
-            <td>Reference, et al. (2019)</td>
-        </tr>
-    </tbody>
-</table>
+[LANTOW, B., 2018, "Adaptive Case Management - A Review of Method Support". In: 11th IFIP WG 8.1. Working Conference Proceedings.](https://www.researchgate.net/publication/328216689_Adaptive_Case_Management_-_A_Review_of_Method_Support_11th_IFIP_WG_81_Working_Conference_PoEM_2018_Vienna_Austria_October_31_-_November_2_2018_Proceedings)
 
-# Appendix B. KIP Examples
+[ZENSEN, A., Kuster, J., 2018, "A Comparison of Flexible BPMN and CMMN in Practice: A Case Study on Component Release Processes" In: IEEE EDOC 2018 Proceedings.](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes)
+
+[ADENSAMER, A., RUECKEL, D., 2018, "Differences Between BPM and ACM Models for Process Execution". In: Business Modeling and Software Design, pp.270-279.](https://www.researchgate.net/publication/326061168_Differences_Between_BPM_and_ACM_Models_for_Process_Execution)
+
+[FRANÇA, J., NETTO, J. M., CARVALHO, J. E. S., SANTORO, F. M., BAIÃO, F. A., PIMENTEL, M., 2015, "KIPO: the knowledge-intensive process ontology". In: Software and Systems Modeling 14(3):1127-1157.](https://www.researchgate.net/publication/282939286_KIPO_the_knowledge-intensive_process_ontology)
+
+[SANTORO, F. M., BAIÃO, F. A., 2018, "Knowledge-intensive Process: A Research Framework". In: Business Process Management Workshops, pp.460-468.](https://www.researchgate.net/publication/322522928_Knowledge-intensive_Process_A_Research_Framework)
+
+[ESTRADA-TORRES, B., RICHETTI, P., DEL-RIO-ORTEGA, A., BAIÃO, F. A., RESINAS, M., SANTORO, F. M., RUIZ-CORTÉS, A., 2019, "Measuring Performance in Knowledge-intensive Processes". In: ACM Transactions on Internet Technology 19(1):1-26.](https://www.researchgate.net/publication/330918205_Measuring_Performance_in_Knowledge-intensive_Processes)
+
+[MARRELLA, A., MECELLA, M., RUSSO, A., STEINAU, S., ANDREWS, K., REICHERT, M., 2016, "Data in Business Process Models, A Preliminary Empirical Study". In: 2015 IEEE 8th International Conference on Service-Oriented Computing and Applications (SOCA).](https://ieeexplore.ieee.org/document/7399100)
+
+# Appendix A. KIP Examples
 
 In order to better understanding the KIP phenomenon this section brings some examples to expose how this kind of process are in fact complex and non-deterministic.
 
@@ -237,7 +233,7 @@ In order to better understanding the KIP phenomenon this section brings some exa
     </tbody>
 </table>
 
-# Appendix C. Supporting Tools
+# Appendix B. Supporting Tools
 
 ## Modeling
 
@@ -249,7 +245,7 @@ In order to better understanding the KIP phenomenon this section brings some exa
   * [ProM](http://www.promtools.org)
   * [Apromore](https://apromore.org/)
 
-# Appendix D. Training Material
+# Appendix C. Training Material
 
 ## Process Mining
 
