@@ -56,7 +56,7 @@ The approach of BPMN is to represent the workﬂow directly in the model. It ind
 
 Fig. 2 shows the elements used in BPMN models, while Fig. 3 represents a example of a simple _Addition Process_ starting with an activity (_Get Numbers_) to obtain the input numbers. Then the process validates those numbers (_Validate Numbers_) and moves on to calculate the sum (_Calculate Sum_) if the numbers are valid; if not valid, the process flow goes back to get new input numbers.
 
-{% include figure image_path="/assets/image/bpmn-elements.png" alt="BPMN elements" caption="Fig. 2 - BPMN elements ([Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
+{% include figure image_path="/assets/image/bpmn-elements.png" alt="BPMN elements" caption="Fig. 2 - BPMN elements (ZENSEN & KUSTER, 2018)" %}
 
 {% include figure image_path="/assets/image/sum.png" alt="Simple Addition Process in BPMN" caption="Fig. 3 - Example of Simple Addition Process in BPMN" %}
 
@@ -76,7 +76,7 @@ The main objective of CMMN is to deﬁne a common meta-model and notation for mo
 
 Fig. 4 shows the elements used in CMMN models, while Fig. 5 illustrates the same _Addition Process_ using CMMN, where the _Get Numbers_ and _Calculate Sum_ activities are connected using a dashed-dot line and a sentry (shallow diamond). The dashed-dot line is decorated with the term _complete_ and is combined with the sentry to indicate the _Calculate Sum_ activity can only start when the _Get Numbers_ activity is completed, thus representing a sequence. It also represents the activity _Validate Numbers_ decorated with a dashed line to indicate such activity is discretionary. Different from the BPMN version of the _Addition Process_ that uses a gateway to represent an optional flow, the CMMN model leaves the decision to apply or not apply validation to the case worker. As a result, when the CMMN version of the _Addition Process_ process starts the _Get Numbers_  activity will be available to execute but _Validate Numbers_ and _Calculate Sum_ will become available only when _Get Numbers_ is completed. Given _Validate Numbers_ is discretionary, the process may execute _Calculate Sum_ without waiting for the validation action.
 
-{% include figure image_path="/assets/image/cmmn-elements.png" alt="CMMN elements" caption="Fig. 4 - CMMN elements ([Zensen and Kuster, 2018](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes))" %}
+{% include figure image_path="/assets/image/cmmn-elements.png" alt="CMMN elements" caption="Fig. 4 - CMMN elements (ZENSEN & KUSTER, 2018)" %}
 
 {% include figure image_path="/assets/image/sum_flex.png" alt="Simple Addition Process in CMMN" caption="Fig. 5 - Simple Addition Process in CMMN" %}
 
@@ -191,28 +191,11 @@ After enactment, logs of each process and instance execution are recorded. Analy
 
 # References
 
-[DI CICCIO, C., MARRELLA, A., RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", In: Journal on Data Semantics, v. 4, n. 1 (April), pp. 29-57.](https://www.researchgate.net/publication/269629902_Knowledge-Intensive_Processes_Characteristics_Requirements_and_Analysis_of_Contemporary_Approaches)
+[DI CICCIO, C., MARRELLA, A., RUSSO, A., 2014, "Knowledge-intensive processes: characteristics, requirements and analysis of contemporary approaches", Journal on Data Semantics, v. 4, n. 1 (April), pp. 29-57.](https://www.researchgate.net/publication/269629902_Knowledge-Intensive_Processes_Characteristics_Requirements_and_Analysis_of_Contemporary_Approaches)
 
-[VACULIN, R., HULL, R., HEATH, T., et al., "Declarative business artifact centric modeling of decision and knowledge intensive business processes". In: Proceedings of the 15th International Enterprise Distributed Object Computing Conference, Helsinki, Finland. 2011. pp. 151-160.](https://ieeexplore.ieee.org/document/6037569)
+[VACULIN, R., HULL, R., HEATH, T., et al. "Declarative business artifact centric modeling of decision and knowledge intensive business processes". In: Proceedings of the 15th International Enterprise Distributed Object Computing Conference, Helsinki, Finland. 2011. pp. 151-160.](https://ieeexplore.ieee.org/document/6037569)
 
-[PILLAERDS, J., ESHUIS, R., 2017, "Assessing suitability of adaptive case management". In: ECIS 2017 Proceedings.](https://www.semanticscholar.org/paper/ASSESSING-SUITABILITY-OF-ADAPTIVE-CASE-MANAGEMENT-Pillaerds/d4c6f7cc4ab9f24fac3b84052f8b7f5d01b468ee)
-
-[ROUTIS, I., NIKOLAIDOU, M., ALEXOPOULOU, N., ANAGNOSTOPOULOS, D., 2018,
-"Empowering Knowledge Workers with CMMN: The Concept of Case Learning". In: EDOC Workshops 2018: 33-36.](https://ieeexplore.ieee.org/document/8536102)
-
-[LANTOW, B., 2018, "Adaptive Case Management - A Review of Method Support". In: 11th IFIP WG 8.1. Working Conference Proceedings.](https://www.researchgate.net/publication/328216689_Adaptive_Case_Management_-_A_Review_of_Method_Support_11th_IFIP_WG_81_Working_Conference_PoEM_2018_Vienna_Austria_October_31_-_November_2_2018_Proceedings)
-
-[ZENSEN, A., Kuster, J., 2018, "A Comparison of Flexible BPMN and CMMN in Practice: A Case Study on Component Release Processes" In: IEEE EDOC 2018 Proceedings.](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes)
-
-[ADENSAMER, A., RUECKEL, D., 2018, "Differences Between BPM and ACM Models for Process Execution". In: Business Modeling and Software Design, pp.270-279.](https://www.researchgate.net/publication/326061168_Differences_Between_BPM_and_ACM_Models_for_Process_Execution)
-
-[FRANÇA, J., NETTO, J. M., CARVALHO, J. E. S., SANTORO, F. M., BAIÃO, F. A., PIMENTEL, M., 2015, "KIPO: the knowledge-intensive process ontology". In: Software and Systems Modeling 14(3):1127-1157.](https://www.researchgate.net/publication/282939286_KIPO_the_knowledge-intensive_process_ontology)
-
-[SANTORO, F. M., BAIÃO, F. A., 2018, "Knowledge-intensive Process: A Research Framework". In: Business Process Management Workshops, pp.460-468.](https://www.researchgate.net/publication/322522928_Knowledge-intensive_Process_A_Research_Framework)
-
-[ESTRADA-TORRES, B., RICHETTI, P., DEL-RIO-ORTEGA, A., BAIÃO, F. A., RESINAS, M., SANTORO, F. M., RUIZ-CORTÉS, A., 2019, "Measuring Performance in Knowledge-intensive Processes". In: ACM Transactions on Internet Technology 19(1):1-26.](https://www.researchgate.net/publication/330918205_Measuring_Performance_in_Knowledge-intensive_Processes)
-
-[MARRELLA, A., MECELLA, M., RUSSO, A., STEINAU, S., ANDREWS, K., REICHERT, M., 2016, "Data in Business Process Models, A Preliminary Empirical Study". In: 2015 IEEE 8th International Conference on Service-Oriented Computing and Applications (SOCA).](https://ieeexplore.ieee.org/document/7399100)
+[ZENSEN, A., KUSTER, J. "A Comparison of Flexible BPMN and CMMN in Practice: A Case Study on Component Release Processes". In: Proceedings of the 22nd International Enterprise Distributed Object Computing Conference (EDOC). 2018. pp. 105-114.](https://www.researchgate.net/publication/328342272_A_Comparison_of_Flexible_BPMN_and_CMMN_in_Practice_A_Case_Study_on_Component_Release_Processes)
 
 # Appendix A. KIP Examples
 
