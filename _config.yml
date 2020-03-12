@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Prof. Dr. Toacy Cavalcante de Oliveira"
-  avatar           : "https://www.cos.ufrj.br/uploadfile/imagem_pessoas/toacy.gif"
+  avatar           : "/assets/image/toacy.gif"
   bio              : "Software Engineering"
   location         : "COPPE/UFRJ"
   email            : "toacy@cos.ufrj.br"
